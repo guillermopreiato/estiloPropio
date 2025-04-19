@@ -1,0 +1,152 @@
+/* === General === */
+body {
+    background-color: #000;
+    color: #f0f0f0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #00cfff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Header === */
+.header-img {
+    width: 100%;
+    max-width: 1024px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+/* === Intro === */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* === Info === */
+.info {
+    padding: 30px;
+    background-color: #111;
+    text-align: center;
+}
+
+.beneficios h3 {
+    margin-top: 20px;
+}
+
+/* === Productos / Destacados === */
+.destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.tarjeta {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* === Contacto === */
+.contacto {
+    padding: 40px 20px;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type=\"text\"],
+form input[type=\"email\"],
+form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form input[type=\"submit\"] {
+    background-color: #00cfff;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type=\"submit\"]:hover {
+    background-color: #00b5e0;
+}
+
+/* === Footer === */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
