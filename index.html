@@ -1,91 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estilo Propio - Tienda Online</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Logo Grande de Bienvenida -->
+    <div id="intro-logo">
+      <img src="img/header.png" alt="Logo Grande" />
+    </div>
 
-<body>
-    <header>
-        <img src="img/header.png" alt="Estilo Propio" class="header-img">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- Header con logo chico y menú -->
+    <header id="main-header" class="hidden">
+      <img src="img/logo1.png" alt="Logo Pequeño" class="logo-chico" />
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="inicio" class="intro">
-            <img src="img/logo1.png" alt="Logo Estilo Propio" class="logo">
-            <h1>Estilo Propio Since 2011</h1>
-            <p>Estilo Propio es más que ropa: es actitud, comodidad y autenticidad. Ofrecemos indumentaria informal y deportiva para quienes se visten fieles a su esencia. Desde 2011, combinamos calidad, diseño y estilo urbano para que te veas bien y te sientas mejor.</p>
-        </section>
+      <section id="inicio" class="intro">
+        <img src="img/logo1.png" alt="Logo Estilo Propio" class="logo" />
+        <h1>Estilo Propio Since 2011</h1>
+        <p>
+          Estilo Propio es más que ropa: es actitud, comodidad y autenticidad.
+          Ofrecemos indumentaria informal y deportiva para quienes se visten
+          fieles a su esencia. Desde 2011, combinamos calidad, diseño y estilo
+          urbano para que te veas bien y te sientas mejor.
+        </p>
+      </section>
 
-        <section class="info">
-            <h2>Calzado</h2>
-            <div class="beneficios">
-                <h3>Envíos a todo el país</h3>
-                <h3>Métodos de pago</h3>
-                <ul>
-                    <li>Efectivo</li>
-                    <li>Cuenta DNI</li>
-                    <li>Mercado Pago</li>
-                </ul>
-            </div>
-        </section>
+      <section class="info">
+        <h2>Calzado</h2>
+        <div class="beneficios">
+          <h3>Envíos a todo el país</h3>
+          <h3>Métodos de pago</h3>
+          <ul>
+            <li>Efectivo</li>
+            <li>Cuenta DNI</li>
+            <li>Mercado Pago</li>
+          </ul>
+        </div>
+      </section>
 
-        <section id="productos" class="destacados">
-            <article class="tarjeta">
-                <h2>Tigre 2024</h2>
-                <img src="img/camiseta2024.png" alt="Camiseta Titular 2024">
-                <p>🧵 Composición: 100% poliéster<br>
-                📏 Talles disponibles: S, M, L, XL<br>
-                🏅 Producto original y oficial</p>
-            </article>
-            <article class="tarjeta">
-                <h2>Tigre 2025</h2>
-                <img src="img/camiseta2025.jpg" alt="Camiseta Titular 2025">
-                <p>🧵 Composición: 100% poliéster<br>
-                📏 Talles disponibles: S, M, L, XL<br>
-                🏅 Producto original y oficial</p>
-            </article>
-            <article class="tarjeta">
-                <h2>Tigre 2025 Suplente</h2>
-                <img src="img/camiseta2025sup.jpg" alt="Camiseta Suplente 2025">
-                <p>🧵 Composición: 100% poliéster<br>
-                📏 Talles disponibles: S, M, L, XL<br>
-                🏅 Producto original y oficial</p>
-            </article>
-        </section>
+      <section id="productos" class="destacados">
+        <article class="tarjeta">
+          <h2>Tigre 2024</h2>
+          <img src="img/camiseta2024.png" alt="Camiseta Titular 2024" />
+          <p>
+            🧵 Composición: 100% poliéster<br />
+            📏 Talles disponibles: S, M, L, XL<br />
+            🏅 Producto original y oficial
+          </p>
+        </article>
+        <article class="tarjeta">
+          <h2>Tigre 2025</h2>
+          <img src="img/camiseta2025.jpg" alt="Camiseta Titular 2025" />
+          <p>
+            🧵 Composición: 100% poliéster<br />
+            📏 Talles disponibles: S, M, L, XL<br />
+            🏅 Producto original y oficial
+          </p>
+        </article>
+        <article class="tarjeta">
+          <h2>Tigre 2025 Suplente</h2>
+          <img src="img/camiseta2025sup.jpg" alt="Camiseta Suplente 2025" />
+          <p>
+            🧵 Composición: 100% poliéster<br />
+            📏 Talles disponibles: S, M, L, XL<br />
+            🏅 Producto original y oficial
+          </p>
+        </article>
+      </section>
 
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <form action="/procesar" method="POST">
-                <label for="usuario">Nombre y Apellido:</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Nombre y Apellido" required>
+      <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="/procesar" method="POST">
+          <label for="usuario">Nombre y Apellido:</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Nombre y Apellido"
+            required
+          />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
 
-                <label for="consulta">Consulta:</label>
-                <textarea id="consulta" name="consulta" placeholder="Escribí tu consulta aquí..." required></textarea>
+          <label for="consulta">Consulta:</label>
+          <textarea
+            id="consulta"
+            name="consulta"
+            placeholder="Escribí tu consulta aquí..."
+            required
+          ></textarea>
 
-                <input type="submit" value="Enviar">
-            </form>
-            <p>O escribinos a: <a href="mailto:estilopropio@gmail.com">estilopropio@gmail.com</a></p>
-        </section>
+          <input type="submit" value="Enviar" />
+        </form>
+        <p>
+          O escribinos a:
+          <a href="mailto:estilopropio@gmail.com">estilopropio@gmail.com</a>
+        </p>
+      </section>
     </main>
 
     <footer>
-        <p>© 2025 Estilo Propio. Todos los derechos reservados.</p>
-        <p>Diseñado por Guillermo Preiato</p>
+      <p>© 2025 Estilo Propio. Todos los derechos reservados.</p>
+      <p>Diseñado por Guillermo Preiato</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
